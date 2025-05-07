@@ -147,11 +147,11 @@ elif choice == "🧠 Deep Learning":
         st.dataframe(df, use_container_width=True)
         
         st.markdown("### 📉 Cours de l'action Tesla")
-        st.image(image_paths["tesla_courbe"], use_column_width=True)
+        st.image(image_paths["tesla_courbe"], use_container_width=True)
 
     with tab2:
         st.markdown("### ⚙️ Performances du modèle")
-        st.image("src/images/loss1.png", caption="Courbe de perte", use_column_width=True)
+        st.image("src/images/loss1.png", caption="Courbe de perte", use_container_width=True)
 
         st.markdown("---")
         st.markdown("### 📐 Métriques du modèle")
@@ -164,14 +164,14 @@ elif choice == "🧠 Deep Learning":
 
         st.markdown("---")
         st.markdown("### 🆚 Valeurs Réelles vs Prédites")
-        st.image("src/images/valeurs reels vs predit1.png", use_column_width=True)
+        st.image("src/images/valeurs reels vs predit1.png", use_container_width=True)
 
         st.markdown("### 📊 Distribution des erreurs")
-        st.image("src/images/erreur1.png", use_column_width=True)
+        st.image("src/images/erreur1.png", use_container_width=True)
 
     with tab3:
         st.markdown("### 🔮 Prédictions : Deux Semaines dans le Futur")
-        st.image("src/images/pred_proch_semaines1.png", use_column_width=True)
+        st.image("src/images/pred_proch_semaines1.png", use_container_width=True)
 
 # 👤 À PROPOS
 elif choice == "👤 À propos de moi":
