@@ -83,7 +83,7 @@ elif choice == "🤖 Machine Learning":
     
     with tab1:
         st.subheader("Loaded Dataset")
-        data = pd.read_csv('concrete.csv')
+        data = pd.read_csv('/concrete.csv')
         st.write(data)
         
     with tab2:
@@ -107,7 +107,7 @@ elif choice == "🤖 Machine Learning":
             fineagg = col7.number_input("Fine Aggregate (kg/m3)", min_value=0.0)
             age = col8.number_input("Age (jours)", min_value=0.0)
                 
-            st_state = st.form_submit_button("📊 Prédire la résistance")
+            st_state = st.form_submit_button("📊 Prédire la résistance du béton")
 
             if st_state:
                 if not all([cement, slag, ash, water, superplastic, coarseagg, fineagg, age]):
