@@ -40,17 +40,17 @@ def remote_css(url):
 local_css("style.css")
 remote_css("https://fonts.googleapis.com/css2?family=Roboto&display=swap")
 
-img1 = Image.open("src/images/app_ai.png")
+img1 = Image.open("../images/app_ai.png")
 img1 = img1.resize((300, 300))  # largeur=200px, hauteur=100px
 st.sidebar.image(img1)
 #st.sidebar.image("images/image_side_bar.png", width=200)
 
 # 📷 IMAGES
 image_paths = {
-    "home": "src/images/app_ai1.png",
-    "ml": "src/images/image_ML.png",
-    "dl": "src/images/image_DL.png",
-    "tesla_courbe" : "src/images/image_tesla_courbe.png"
+    "home": "../images/app_ai1.png",
+    "ml": "../images/image_ML.png",
+    "dl": "../images/image_DL.png",
+    "tesla_courbe" : "../images/image_tesla_courbe.png"
 }
 
 # 🔢 MENU
@@ -83,7 +83,7 @@ elif choice == "🤖 Machine Learning":
     
     with tab1:
         st.subheader("Loaded Dataset")
-        data = pd.read_csv('src/concrete.csv')
+        data = pd.read_csv('../concrete.csv')
         st.write(data)
         
     with tab2:
@@ -113,7 +113,7 @@ elif choice == "🤖 Machine Learning":
                 if not all([cement, slag, ash, water, superplastic, coarseagg, fineagg, age]):
                     st.warning("Merci de remplir tous les champs.")
                 else:
-                    model = joblib.load(open("src/modelML.pkl", "rb"))  
+                    model = joblib.load(open("../modelML.pkl", "rb"))  
                     df = pd.DataFrame({'cement': [cement],
                                        'slag': [slag],
                                        'ash': [ash],
@@ -130,7 +130,7 @@ elif choice == "🧠 Deep Learning":
     
     
 
-    img = Image.open("src/images/image_dl.png")
+    img = Image.open("../images/image_dl.png")
     img = img.resize((1000, 500))  # largeur=200px, hauteur=100px
     st.image(img)
     st.subheader("Deep Learning : Prévision du cours de l'action de Tesla")
@@ -143,15 +143,15 @@ elif choice == "🧠 Deep Learning":
     
     with tab1:
         st.markdown("### 📊 Données des trois dernières années")
-        df = pd.read_csv("src/dataCC.csv")
+        df = pd.read_csv("../dataCC.csv")
         st.dataframe(df, use_container_width=True)
         
         st.markdown("### 📉 Cours de l'action Tesla")
-        st.image(image_paths["tesla_courbe"], use_container_width=True)
+        st.image(image_paths["tesla_courbe"], use_column_width=True)
 
     with tab2:
         st.markdown("### ⚙️ Performances du modèle")
-        st.image("src/images/loss1.png", caption="Courbe de perte", use_container_width=True)
+        st.image("../images/loss1.png", caption="Courbe de perte", use_column_width=True)
 
         st.markdown("---")
         st.markdown("### 📐 Métriques du modèle")
@@ -164,20 +164,20 @@ elif choice == "🧠 Deep Learning":
 
         st.markdown("---")
         st.markdown("### 🆚 Valeurs Réelles vs Prédites")
-        st.image("src/images/valeurs reels vs predit1.png", use_container_width=True)
+        st.image("../images/valeurs reels vs predit1.png", use_column_width=True)
 
         st.markdown("### 📊 Distribution des erreurs")
-        st.image("src/images/erreur1.png", use_container_width=True)
+        st.image("../images/erreur1.png", use_column_width=True)
 
     with tab3:
         st.markdown("### 🔮 Prédictions : Deux Semaines dans le Futur")
-        st.image("src/images/pred_proch_semaines1.png", use_container_width=True)
+        st.image("../images/pred_proch_semaines1.png", use_column_width=True)
 
 # 👤 À PROPOS
 elif choice == "👤 À propos de moi":
     col1, col2 = st.columns([1, 3])
     with col1:
-        st.image("src/images/me.jpg")
+        st.image("../images/me.jpg")
     with col2:
         st.subheader("ALOTSE Christy")
         st.text("Data Scientist")
