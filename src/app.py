@@ -143,7 +143,7 @@ elif choice == "🧠 Deep Learning":
     
     with tab1:
         st.markdown("### 📊 Données des trois dernières années")
-        df = pd.read_csv("dataCC.csv")
+        df = pd.read_csv("src/dataCC.csv")
         st.dataframe(df, use_container_width=True)
         
         st.markdown("### 📉 Cours de l'action Tesla")
