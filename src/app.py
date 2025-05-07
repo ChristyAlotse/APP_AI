@@ -68,7 +68,7 @@ if choice == "🏠 Accueil":
     st.markdown('---')
     st.subheader("Bienvenue dans notre application d'Intelligence Artificielle")
     st.markdown('---')
-    st.markdown("Découvrez APP_AI, votre alliée intelligente deux-en-un : elle vous aide à anticiper les variations du cours de l’action Tesla et à évaluer avec fiabilité la résistance du béton à la compression. Une seule application, deux puissants leviers de décision.")
+    st.write("Découvrez APP_AI, votre alliée intelligente deux-en-un : elle vous aide à anticiper les variations du cours de l’action Tesla et à évaluer avec fiabilité la résistance du béton à la compression. Une seule application, deux puissants leviers de décision.")
 
 # 🤖 PAGE MACHINE LEARNING
 elif choice == "🤖 Machine Learning":
@@ -113,7 +113,7 @@ elif choice == "🤖 Machine Learning":
                 if not all([cement, slag, ash, water, superplastic, coarseagg, fineagg, age]):
                     st.warning("Merci de remplir tous les champs.")
                 else:
-                    model = joblib.load(open("modelML.pkl", "rb"))  
+                    model = joblib.load(open("src/modelML.pkl", "rb"))  
                     df = pd.DataFrame({'cement': [cement],
                                        'slag': [slag],
                                        'ash': [ash],
