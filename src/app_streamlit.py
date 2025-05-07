@@ -133,7 +133,7 @@ elif choice == "🧠 Deep Learning":
     img = Image.open("src/images/image_dl.png")
     img = img.resize((1000, 500))  # largeur=200px, hauteur=100px
     st.image(img)
-    st.title("Deep Learning : Prévision du cours de l'action de Tesla")
+    st.subheader("Deep Learning : Prévision du cours de l'action de Tesla")
     #st.info("La fonctionnalité Deep Learning arrive bientôt...")
     tab1, tab2, tab3 = st.tabs([
         "📈 Visualisation", 
