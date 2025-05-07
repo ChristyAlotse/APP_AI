@@ -83,7 +83,7 @@ elif choice == "🤖 Machine Learning":
     
     with tab1:
         st.subheader("Loaded Dataset")
-        data = pd.read_csv('/concrete.csv')
+        data = pd.read_csv('src/concrete.csv')
         st.write(data)
         
     with tab2:
