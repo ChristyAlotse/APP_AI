@@ -68,7 +68,7 @@ if choice == "🏠 Accueil":
     st.markdown('---')
     st.subheader("Bienvenue dans notre application d'Intelligence Artificielle")
     st.markdown('---')
-    st.write("Découvrez APP_AI, votre alliée intelligente deux-en-un : elle vous aide à anticiper les variations du cours de l’action Tesla et à évaluer avec fiabilité la résistance du béton à la compression. Une seule application, deux puissants leviers de décision.")
+    st.markdown("Découvrez APP_AI, votre alliée intelligente deux-en-un : elle vous aide à anticiper les variations du cours de l’action Tesla et à évaluer avec fiabilité la résistance du béton à la compression. Une seule application, deux puissants leviers de décision.")
 
 # 🤖 PAGE MACHINE LEARNING
 elif choice == "🤖 Machine Learning":
