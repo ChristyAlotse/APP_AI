@@ -77,7 +77,7 @@ elif choice == "🤖 Machine Learning":
     img3 = img3.resize((900, 400))  # largeur=200px, hauteur=100px
     st.image(img3)
     
-    st.title("Prédiction avec un modèle de ML")
+    st.title("Prédiction de la résistance du béton avec un modèle de ML")
     tab1,tab2 = st.tabs([":clipboard: Data",
                                   "🔮 Prediction"])
     
