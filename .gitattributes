@@ -41,3 +41,11 @@ images/image_homee.png filter=lfs diff=lfs merge=lfs -text
 images/image_ML.png filter=lfs diff=lfs merge=lfs -text
 images/me.jpg filter=lfs diff=lfs merge=lfs -text
 images/valeurs[[:space:]]reels[[:space:]]vs[[:space:]]predit1.png filter=lfs diff=lfs merge=lfs -text
+src/images/app_ai.png filter=lfs diff=lfs merge=lfs -text
+src/images/app_ai1.png filter=lfs diff=lfs merge=lfs -text
+src/images/image_dl.png filter=lfs diff=lfs merge=lfs -text
+src/images/image_home.png filter=lfs diff=lfs merge=lfs -text
+src/images/image_homee.png filter=lfs diff=lfs merge=lfs -text
+src/images/image_ML.png filter=lfs diff=lfs merge=lfs -text
+src/images/me.jpg filter=lfs diff=lfs merge=lfs -text
+src/images/valeurs[[:space:]]reels[[:space:]]vs[[:space:]]predit1.png filter=lfs diff=lfs merge=lfs -text
