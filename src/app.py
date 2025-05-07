@@ -40,7 +40,7 @@ def remote_css(url):
 local_css("style.css")
 remote_css("https://fonts.googleapis.com/css2?family=Roboto&display=swap")
 
-img1 = Image.open("images/app_ai.png")
+img1 = Image.open("../images/app_ai.png")
 img1 = img1.resize((300, 300))  # largeur=200px, hauteur=100px
 st.sidebar.image(img1)
 #st.sidebar.image("images/image_side_bar.png", width=200)
