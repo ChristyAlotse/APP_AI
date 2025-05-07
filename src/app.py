@@ -47,10 +47,10 @@ st.sidebar.image(img1)
 
 # 📷 IMAGES
 image_paths = {
-    "home": "images/app_ai1.png",
-    "ml": "images/image_ML.png",
-    "dl": "images/image_DL.png",
-    "tesla_courbe" : "images/image_tesla_courbe.png"
+    "home": "src/images/app_ai1.png",
+    "ml": "src/images/image_ML.png",
+    "dl": "src/images/image_DL.png",
+    "tesla_courbe" : "src/images/image_tesla_courbe.png"
 }
 
 # 🔢 MENU
@@ -130,7 +130,7 @@ elif choice == "🧠 Deep Learning":
     
     
 
-    img = Image.open("images/image_dl.png")
+    img = Image.open("src/images/image_dl.png")
     img = img.resize((1000, 500))  # largeur=200px, hauteur=100px
     st.image(img)
     st.title("Deep Learning")
@@ -151,7 +151,7 @@ elif choice == "🧠 Deep Learning":
 
     with tab2:
         st.markdown("### ⚙️ Performances du modèle")
-        st.image("images/loss1.png", caption="Courbe de perte", use_column_width=True)
+        st.image("src/images/loss1.png", caption="Courbe de perte", use_column_width=True)
 
         st.markdown("---")
         st.markdown("### 📐 Métriques du modèle")
@@ -164,20 +164,20 @@ elif choice == "🧠 Deep Learning":
 
         st.markdown("---")
         st.markdown("### 🆚 Valeurs Réelles vs Prédites")
-        st.image("images/valeurs reels vs predit1.png", use_column_width=True)
+        st.image("src/images/valeurs reels vs predit1.png", use_column_width=True)
 
         st.markdown("### 📊 Distribution des erreurs")
-        st.image("images/erreur1.png", use_column_width=True)
+        st.image("src/images/erreur1.png", use_column_width=True)
 
     with tab3:
         st.markdown("### 🔮 Prédictions : Deux Semaines dans le Futur")
-        st.image("images/pred_proch_semaines1.png", use_column_width=True)
+        st.image("src/images/pred_proch_semaines1.png", use_column_width=True)
 
 # 👤 À PROPOS
 elif choice == "👤 À propos de moi":
     col1, col2 = st.columns([1, 3])
     with col1:
-        st.image("images/me.jpg")
+        st.image("src/images/me.jpg")
     with col2:
         st.subheader("ALOTSE Christy")
         st.text("Data Scientist")
