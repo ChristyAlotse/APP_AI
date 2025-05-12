@@ -1,0 +1,104 @@
+/* Centrage des titres */
+h1,
+h2,
+h3 {
+    text-align: center;
+    color: #00ADB5;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Personnalisation des boutons */
+.stButton>button {
+    background-color: #00ADB5;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.stButton>button:hover {
+    background-color: #008C9E;
+}
+
+/* Style des onglets */
+.stTabs [role="tab"] {
+    background-color: #2C2C2C;
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    margin-right: 2px;
+    font-weight: bold;
+}
+
+.stTabs [role="tab"][aria-selected="true"] {
+    background-color: #00ADB5;
+    color: #FFFFFF;
+}
+
+/* Style des conteneurs */
+.stContainer {
+    background-color: #2C2C2C;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style des images */
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style des tableaux */
+.stDataFrame {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    border: 1px solid #00ADB5;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Style des métriques */
+.stMetric {
+    background-color: #2C2C2C;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+/* Style des liens */
+a {
+    color: #00ADB5;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+body {
+    background: linear-gradient(-45deg, #1E1E1E, #2C2C2C, #1E1E1E, #2C2C2C);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
