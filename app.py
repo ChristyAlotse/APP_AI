@@ -16,6 +16,7 @@ st.markdown(
         background: linear-gradient(-45deg, #1E1E1E, #2C2C2C, #1E1E1E, #2C2C2C);
         background-size: 400% 400%;
         animation: gradientBG 15s ease infinite;
+        color: white;
     }
 
     @keyframes gradientBG {
