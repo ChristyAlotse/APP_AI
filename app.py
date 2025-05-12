@@ -178,7 +178,7 @@ elif choice == "👤 À propos de moi":
         st.image("images/me.jpg")
     with col2:
         st.subheader("ALOTSE Christy")
-        st.text("Data Scientist")
+        st.write("Data Scientist")
         st.write("Spécialisée dans le traitement, l’analyse et la visualisation des données, ainsi que dans la conception, l’optimisation et le déploiement de modèles de machine learning, tout en gardant un ancrage solide dans le cœur de métier.")
     
     st.markdown("💼 [LinkedIn](https://www.linkedin.com/in/christy-alotse)")
