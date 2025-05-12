@@ -10,7 +10,7 @@ h3 {
 /* Personnalisation des boutons */
 .stButton>button {
     background-color: #00ADB5;
-    color: white;
+    color: black;
     border-radius: 8px;
     padding: 10px 20px;
     font-weight: bold;
@@ -80,6 +80,15 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+/* Appliquer du texte blanc dans les champs de saisie numériques */
+input[type="number"] {
+    color: white !important;
+    background-color: #333333; /* facultatif : fond plus sombre */
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 0.4rem;
 }
 
 
